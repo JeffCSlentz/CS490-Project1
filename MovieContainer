@@ -10,6 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            
+            /*GRID MOVIE ELEMENT*/
             div.gridMovie{
                 position: relative;
                 width: 200px;
@@ -17,49 +19,85 @@ and open the template in the editor.
                 float: left;
                 margin-top: 30px;
                 margin-left: 30px;
+                border: 1px solid black;
+                overflow: hidden;
             }
             div.gridMovie img.movie{
                 position: absolute;
                 width: 200px;
                 height: 200px;
             }
+            div.gridMovie img.HD{
+                position: absolute;
+                height: 30px;
+                width: 40px;
+                top: 15px;
+                left: 15px;
+            }
+            div.description{
+                position: absolute;
+                text-align: center;
+                color: white;
+                width: 200px;
+                height:40px;
+                left: 0px;
+                top: 160px;
+                background-color: rgba(0,0,0,.4);
+                transition: 1s; /*Standard, IE 10*/
+                    -webkit-transition: 1s; /* For Chrome, Safari*/
+                    -moz-transition: 1s; /* For Firefox*/
+                    -o-transition:1s; /* For Opera*/
+            }
+            div.gridMovie:hover div.description{
+                top:124px;
+            }
+            div.starring{
+                position:relative;
+                text-align:left;
+                color:white;
+                width: 200px;
+                top:4px;
+                background-color: rgba(0,0,0,.7);
+            } 
+            /*END OF GRID MOVIE ELEMENT*/
+            
         </style>
     </head>
     <body>
         <div class="gridMovie">
             <img class="movie" src="images/Shrek.jpg">
-            <img class="HD" src=""
-            <div class="description"></div>
+            <img class="HD" src="images/icons/HD.png">
+            <div class="description">
+                MOVIE NAME<br>(year)
+                <div class="starring">
+                Starring<br> Actor1, Actor2
+                </div>
+            </div>
+            
         </div>
+        
         <div class="gridMovie">
-            <img src="images/Shrek.jpg">
+            <img class="movie" src="images/Shrek.jpg">
+            <div class="description">
+                MOVIE NAME<br>(year)
+                <div class="starring">
+                Starring<br> Actor1, Actor2
+                </div>
+            </div>
+            
         </div>
+        
         <div class="gridMovie">
-            <img src="images/Shrek.jpg">
+            <img class="movie" src="images/Shrek.jpg">
+            <div class="description">
+                MOVIE NAME<br>(year)
+                <div class="starring">
+                Starring<br> Actor1, Actor2
+                </div>
+            </div>
+            
         </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>        
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
-        <div class="gridMovie">
-            <img src="images/Shrek.jpg">
-        </div>
+     
     </body>
 </html>
+
