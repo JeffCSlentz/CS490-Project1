@@ -1,0 +1,76 @@
+/*GRID MOVIE ELEMENT*/
+            div.gridWrapper div.gridMovieBorder{
+                position: relative;
+                width: 210px;
+                height: 210px;
+                float: left;
+                margin-top: 30px;
+                margin-left: 30px;
+                border: 1px solid grey;
+                overflow: hidden;
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto{
+                position: absolute;
+                width:200px;
+                height:200px;
+                left: 5px;
+                top: 5px;
+                overflow: hidden;
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto img.movie{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 200px;
+                height: 200px;
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto img.HD{
+                position: absolute;
+                height: 30px;
+                width: 40px;
+                top: 15px;
+                left: 15px;
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.description{
+                position: absolute;
+                text-align: center;
+                vertical-align: middle;
+                color: white;
+                width: 200px;
+                height:40px;
+                left: 0px;
+                top: 160px;
+                background-color: rgba(0,0,0,.4);
+                transition: 1s; /*Standard, IE 10*/
+                    -webkit-transition: 1s; /* For Chrome, Safari*/
+                    -moz-transition: 1s; /* For Firefox*/
+                    -o-transition:1s; /* For Opera*/
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.description span{
+                position:absolute;
+                top:50%;
+                left:5px;
+                width:200px;
+                height:10em;
+                margin-top:-18px;
+            }
+            div.gridWrapper div.gridMovieBorder:hover div.gridMoviePhoto div.description{
+                top:80px;
+                height:80px;
+            }
+            div.gridWrapper div.gridMovieBorder:hover div.gridMoviePhoto div.starring{
+                top:160px;
+            }
+            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.starring{
+                position:relative;
+                text-align:left;
+                color:white;
+                width: 200px;
+                height: 40px;
+                top:200px;
+                background-color: rgba(0,0,0,.7);
+                transition: 1s; /*Standard, IE 10*/
+                    -webkit-transition: 1s; /* For Chrome, Safari*/
+                    -moz-transition: 1s; /* For Firefox*/
+                    -o-transition:1s; /* For Opera*/
+            } 
