@@ -12,42 +12,78 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="Style/gridMovie.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="script/movies.js"></script>
+        <script src="script/htmlMaker.js"></script>
         <script src="script/gridMovieGen.js"></script>
         
     </head>
     <body>
-        <div id="gridWrapper" class="gridWrapper">
-            
-            
-            <!-- This gets written over, it's here for posterity -->
-            <div class="gridMovieBorder">
-                <div class="gridMoviePhoto">
-                    <img class="movie" src="data/life_of_pi.jpg">
-                    <img class="HD" src="data/icons/HD.png">
-                    <div class="description">
-                        <span>{{title}}<br>({{year}})</span>
+        <div class = "site_container">
+            <div class = "header_bar">
 
+                <img class = "site_logo" src="data/icons/movie.png" alt ="movie reel">
+                <div class = title>
+                    <p class="site_title">
+                        Rent A Movie
+                    </p>
+                </div>
+                <div class="search_bar">
+                    <input type="search" class="search_bar" placeholder = "search" size = "15" maxlength="25">
+                </div>
+            </div>
+            <div class = "search_button">
+            </div>
+            <div class = "sort_option">
+                <label for='sort_list'> Sort By: </label>
+                <select id ='sort_list'>
+                    <option>
+                        Year
+                    </option>
+                    <option>
+                        Rating
+                    </option>
+                </select>
+                <div class = "pageview_toggle">
+
+                    <img src='data/icons/list.jpg' alt = 'grid.jpg' class='listview_button'>
+                    <img src='data/icons/grid.jpg' alt='grid.jpg' class='gridview_button'>
+                </div>
+            </div>
+            <div id="gridWrapper" class="gridWrapper">
+
+
+                <!-- This gets written over, it's here for posterity -->
+                <div class="gridMovieBorder">
+                    <div class="gridMoviePhoto">
+                        <img class="movie" src="data/life_of_pi.jpg">
+                        <img class="HD" src="data/icons/HD.png">
+                        <div class="description">
+                            <span>{{title}}<br>({{year}})</span>
+
+                        </div>
+                        <div class="starring">
+                                <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
+                        </div>
                     </div>
-                    <div class="starring">
-                            <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
+                </div>
+
+                <div class="gridMovieBorder">
+                    <div class="gridMoviePhoto">
+                        <img class="movie" src="data/life_of_pi.jpg">
+                        <img class="HD" src="data/icons/HD.png">
+                        <div class="description">
+                            <span>{{title}}<br>({{year}})</span>
+
+                        </div>
+                        <div class="starring">
+                                <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="gridMovieBorder">
-                <div class="gridMoviePhoto">
-                    <img class="movie" src="data/life_of_pi.jpg">
-                    <img class="HD" src="data/icons/HD.png">
-                    <div class="description">
-                        <span>{{title}}<br>({{year}})</span>
-
-                    </div>
-                    <div class="starring">
-                            <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
-                    </div>
-                </div>
+            <div id="listWrapper" class="listWrapper">
+                
             </div>
         </div>
     </body>
 </html>
- 
