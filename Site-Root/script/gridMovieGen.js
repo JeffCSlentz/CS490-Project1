@@ -1,37 +1,20 @@
 $(document).ready(function () { 
-    load_images();
+    var gallery = new Gallery(movies["movies"]);
 });
 
-
-function load_images(){
-    var data = movies["movies"];
-    var html = "";
-    
-    for (var i =0; i<data.length; i++){
-        html += make_image(data[i]);
-    }
-    
-    $("#gridWrapper").html(html);
+function Gallery(data){
+    this.movies = data;
+    this.grid_movie_div = "#gridWrapper";
+    this.grid_movie_template = "templates/grid_photo.html";
+    this.load_grid_movies(this);
 }
 
-function make_image(data){
-    var html = "";
-    html += "<div class='gridMovieBorder'>";
-    html += "<div class='gridMoviePhoto'>";
-    html += "<img class='movie' src='"+data["photo"]+"'>";
-    
-    if (data["HD"] === true){
-        html += "<img class='HD' src='data/icons/HD.png'>";
-    }
-            
-    html += "<div class='description'>";
-    html += "<span>"+data["title"]+"<br>"+data["year"]+"</span>";
-    html += "</div>";
-            
-    html += "<div class='starring'>";
-    html += "<b>&nbsp;Starring:</b><br>&nbsp;"+data["starring"];
-    html += "</div>";
-    html += "</div>";
-    html += "</div>";
-    return html;
-}
+Gallery.prototype.load_grid_movies = function(self){
+    $.get(self.grid_movie_template, function(template){
+        var html_maker = new htmlMaker(template);
+        var html = html_maker.getHTML(self.movies);
+        $(self.grid_movie_div).html(html);
+    });
+};
+
+
