@@ -1,5 +1,120 @@
+ /*font definition*/
+            @font-face{
+                font-family: oleo;
+                src:"Oleo.woff";
+            }
+            /*end of font definition*/
+
+            /*page div options*/
+            div.site_container{
+                width:100%;
+                min-width:545px;
+                /*background-color:lightcyan;*/
+            }
+            /*end of page div*/
+
+            /*page heading*/
+            div.header_bar{
+                background-color: rgb(245,245,245);
+                /*border:1px solid gray;*/
+                height:50px;
+                width:100%;
+            }
+            img.site_logo{
+                height:50px;
+                width:50px;
+                position:relative;
+                margin-right:5px;
+                float:left;
+            }
+            p.site_title{
+                position:relative;
+                margin:0px;
+                margin-left:5px;
+                height:50px;
+                width: 150px;
+                float:left;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 50px;
+                font-family: oleo;
+            }
+            input.search_bar{
+                width:60%;
+                background-color:white;
+                position:relative;
+                min-width:200px;
+                float:left;
+                height:30px;
+                line-height:30px;
+                margin-top:10px;
+                border: 1px grey solid;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            
+            input.search_bar:focus{
+                border:1px lightslategrey solid;
+            }
+            
+            .search_button{
+                line-height:25px;
+                margin-top:10px;
+                position:relative;
+                float:left;
+                height:28px;
+                width:55px;
+                text-align: center;
+                color:white;
+                background-color: #009DE4;
+                border: 1px transparent solid;
+                border-radius: 0px 4px 4px 0px;
+            }
+            
+            .search_button:hover{
+                cursor: pointer;
+                
+            }
+            .sort_option{
+                height:35px;
+                /*background-color:lightcyan;*/
+                line-height: 35px;
+                border-bottom: 1px solid gray;
+            }
+            .sort_option.label{
+                position:relative;
+                float:left;
+            }
+            #sort_list
+            {
+                position:relative;
+            }
+            .pageview_toggle{
+                padding:0;
+                position:relative;
+                top:2px;
+                float:right;
+                height:33px;
+                line-height: 0;
+                border-bottom: 0;
+            }
+            .pageview_toggle img{
+                margin:0px;
+                padding:0;
+                position:relative;
+                float:right;
+            }
+            
+            .pageview_toggle img:hover{
+                
+                cursor:pointer;
+            }
+            /*end of page heading*/
+
+
+
 /*GRID MOVIE ELEMENT*/
-            div.gridWrapper div.gridMovieBorder{
+            div.grid div.movieContainer{
                 position: relative;
                 width: 210px;
                 height: 210px;
@@ -9,7 +124,7 @@
                 border: 1px solid grey;
                 overflow: hidden;
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto{
+            div.grid div.movieContainer div.gridMoviePhoto{
                 position: absolute;
                 width:200px;
                 height:200px;
@@ -17,21 +132,21 @@
                 top: 5px;
                 overflow: hidden;
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto img.movie{
+            div.grid div.movieContainer div.gridMoviePhoto img.movie{
                 position: absolute;
                 top: 0px;
                 left: 0px;
                 width: 200px;
                 height: 200px;
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto img.HD{
+            div.grid div.movieContainer div.gridMoviePhoto img.HD{
                 position: absolute;
                 height: 30px;
                 width: 40px;
                 top: 15px;
                 left: 15px;
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.description{
+            div.grid div.movieContainer div.gridMoviePhoto div.descriptionGrid{
                 position: absolute;
                 text-align: center;
                 vertical-align: middle;
@@ -46,7 +161,7 @@
                     -moz-transition: 1s; /* For Firefox*/
                     -o-transition:1s; /* For Opera*/
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.description span{
+            div.grid div.movieContainer div.gridMoviePhoto div.descriptionGrid span{
                 position:absolute;
                 top:50%;
                 left:5px;
@@ -54,14 +169,14 @@
                 height:10em;
                 margin-top:-18px;
             }
-            div.gridWrapper div.gridMovieBorder:hover div.gridMoviePhoto div.description{
+            div.grid div.movieContainer:hover div.gridMoviePhoto div.descriptionGrid{
                 top:80px;
                 height:80px;
             }
-            div.gridWrapper div.gridMovieBorder:hover div.gridMoviePhoto div.starring{
+            div.grid div.movieContainer:hover div.gridMoviePhoto div.starring{
                 top:160px;
             }
-            div.gridWrapper div.gridMovieBorder div.gridMoviePhoto div.starring{
+            div.grid div.movieContainer div.gridMoviePhoto div.starring{
                 position:relative;
                 text-align:left;
                 color:white;
@@ -74,3 +189,72 @@
                     -moz-transition: 1s; /* For Firefox*/
                     -o-transition:1s; /* For Opera*/
             } 
+            
+            /*elements not using*/
+            div.grid div.info{
+                display: none;
+            }
+            div.grid div.cover{
+                display: none;
+            }
+/*End of Grid Movie Element*/
+
+/*List View Element*/
+            div.list .info{
+                float:right;
+                
+                
+            }
+            div.list div.movieContainer{
+                width: 690px;
+                height:260px;
+                border-bottom: solid; 
+                border-width:1.5px;
+                margin-top: 15px;
+                //margin-left: 10px;
+                border-color: rgb(245,245,245);
+                 
+            }
+            div.list img.screenshot{
+                //padding:10px;
+                height:220px;
+                width:220px;
+               
+            }
+            div.list div.cover{
+                float:left;
+                border-style: solid;
+                padding:5px;
+                border-color: rgb(245,245,245);
+                border-width:1.5px;
+                position: relative;               
+                //margin-left: 10px;
+               // margin-right: 10px;
+               
+            }
+            div.list .descriptionList p{
+                line-height: 1.5;
+                font-size: 15px;
+                width: 450px;
+                background-color: rgb(236,255,255);
+            }
+            div.list .title{
+                font-size: 18px;
+                margin-top:0;
+                font-weight: bold;
+            }     
+            div.list .bold{
+                font-weight: bold;
+            }
+            
+            div.list .year{
+                font-size:15px;
+                color:gray;
+                font-weight: normal;
+            }
+            
+            /*elements not using*/
+            div.list div.gridMoviePhoto{
+                display: none;
+            }
+/* End of List view element*/
