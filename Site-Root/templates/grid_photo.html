@@ -1,13 +1,39 @@
-<div class="gridMovieBorder">
+<div class="movieContainer">
     <div class="gridMoviePhoto">
         <img class="movie" src='{{photo}}'>
         <img class="HD" src='data/icons/HD.png'>
-        <div class="description">
+        <div class="descriptionGrid">
             <span>{{title}}<br>({{year}})</span>
 
         </div>
         <div class="starring">
                 <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
         </div>
+    </div>
+    <div class="info">
+        <div class="title">
+            {{title}}
+            <span class="year">({{year}})</span> 
+        </div>
+        <p><span class="bold">Starring:</span>&nbsp{{starring}}</p>
+
+            <div class="rating">
+                <span class="bold">Rating:</span>
+                <img src="Data/Icons/gold_star.png" height="20" width="20">
+                <img src="Data/Icons/gold_star.png" height="20" width="20">
+                <img src="Data/Icons/gold_star.png" height="20" width="20">
+                <img src="Data/Icons/gold_star.png" height="20" width="20">
+                <img src="Data/Icons/gold_star.png" height="20" width="20">
+            </div><!-- star-->
+
+            <div class ="descriptionList">
+                <p>{{description}}</p>
+            </div>
+
+
+    </div><!-- info-->
+
+    <div class="cover">
+        <img class="screenshot" src='{{photo}}'>
     </div>
 </div>
