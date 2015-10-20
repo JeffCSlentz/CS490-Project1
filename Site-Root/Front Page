@@ -44,8 +44,8 @@ and open the template in the editor.
                 </select>
                 <div class = "pageview_toggle">
 
-                    <img src='data/icons/list.jpg' alt = 'grid.jpg' class='listview_button'>
-                    <img src='data/icons/grid.jpg' alt='grid.jpg' class='gridview_button'>
+                    <img src='data/icons/list.jpg' alt = 'grid.jpg' id='list_icon' class='listview_button'>
+                    <img src='data/icons/grid.jpg' alt = 'grid.jpg' id='grid_icon' class='gridview_button'>
                 </div>
             </div>
             <div id="gridWrapper" class="gridWrapper">
@@ -79,10 +79,6 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div id="listWrapper" class="listWrapper">
-                
             </div>
         </div>
     </body>
