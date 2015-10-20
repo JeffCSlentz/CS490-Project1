@@ -13,7 +13,7 @@ and open the template in the editor.
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="script/movies.js"></script>
         <script src="script/htmlMaker.js"></script>
-        <script src="script/gridMovieGen.js"></script>
+        <script src="script/pageLoad.js"></script>
         
     </head>
     <body>
@@ -29,9 +29,11 @@ and open the template in the editor.
                 <div class="search_bar">
                     <input type="search" class="search_bar" placeholder = "search" size = "15" maxlength="25">
                 </div>
+                <div class = "search_button">
+                    Search
+                </div>
             </div>
-            <div class = "search_button">
-            </div>
+
             <div class = "sort_option">
                 <label for='sort_list'> Sort By: </label>
                 <select id ='sort_list'>
@@ -48,7 +50,7 @@ and open the template in the editor.
                     <img src='data/icons/grid.jpg' alt = 'grid.jpg' id='grid_icon' class='gridview_button'>
                 </div>
             </div>
-            <div id="gridWrapper" class="gridWrapper">
+            <div id="movies" class="grid">
 
 
                 <!-- This gets written over, it's here for posterity -->
