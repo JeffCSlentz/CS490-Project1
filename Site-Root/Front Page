@@ -27,11 +27,11 @@ and open the template in the editor.
                     </p>
                 </div>
                 <div class="search_bar">
-                    <input type="search" class="search_bar" placeholder = "search" size = "15" maxlength="25">
+                    <input type="search" class="search_bar"  id="search_bar" placeholder = "search" size = "15" maxlength="25">
                 </div>
-                <div class = "search_button">
+                <button class = "search_button" id="search_button">
                     Search
-                </div>
+                </button>
             </div>
 
             <div class = "sort_option">
@@ -81,6 +81,9 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="tempthing">
+                
             </div>
         </div>
     </body>
