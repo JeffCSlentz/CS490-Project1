@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .info{
+                float:right;
+                
+                
+            }
+            .container{
+                width: 690px;
+                height:260px;
+                border-bottom: solid; 
+                border-width:1.5px;
+                margin-top: 15px;
+                //margin-left: 10px;
+                border-color: rgb(245,245,245);
+                 
+            }
+            .screenshot{
+                //padding:10px;
+                height:220px;
+                width:220px;
+               
+            }
+            .cover{
+                float:left;
+                border-style: solid;
+                padding:5px;
+                border-color: rgb(245,245,245);
+                border-width:1.5px;
+                position: relative;               
+                //margin-left: 10px;
+               // margin-right: 10px;
+               
+            }
+            .description p{
+                line-height: 1.5;
+                font-size: 15px;
+                width: 450px;
+                background-color: rgb(236,255,255);
+            }
+            .title{
+                font-size: 18px;
+                margin-top:0;
+                font-weight: bold;
+            }     
+            .bold{
+                font-weight: bold;
+            }
+            
+            .year{
+                font-size:15px;
+                color:gray;
+                font-weight: normal;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">Blue Streak <span class="year">(1999)</span></div>
+                <p><span class="bold">Starring:</span> Martin Lawrence, Luke Wilson</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span> 
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>Blue Streak is a 1999 American buddy cop comedy film directed by Les Mayfield and starring Martin Lawrence, 
+                            Luke Wilson, Dave Chappelle, Peter Greene, Nicole Ari Parker and William Forsythe. The film was shot on 
+                            location in California. The prime shooting spot was Sony Pictures Studios which is located in Culver City, 
+                            California</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/blue-Streak.jpg">
+            </div>
+            
+        </div><!-- container-->
+         <div class="container">
+            
+            <div class="info">
+                <div class="title">Mrs. Doubtfire <span class="year">(1993)</span></div>
+                <p><span class="bold">Starring:</span> Robin Williams, Sally Field</p>
+                
+                <div class="rating">
+                    <span class="bold">Rating:</span> 
+                    <img src="images/gold_star.png" height="20" width="20">
+                    <img src="images/gold_star.png" height="20" width="20">
+                    <img src="images/regular_star.png" height="20" width="20">
+                    <img src="images/regular_star.png" height="20" width="20">
+                    <img src="images/regular_star.png" height="20" width="20">
+                </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>Mrs. Doubtfire is a 1993 American comedy film starring Robin Williams (who also served as co-producer) and 
+                            Sally Field and based on the novel Alias Madame Doubtfire by Anne Fine. It was directed by Chris Columbus 
+                            and distributed by 20th Century Fox. It won the Academy Award for Best Makeup.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            <div class="cover">
+            <img class="screenshot" src="data/doubt_fire.jpg" >
+            </div>
+        </div><!-- container-->
+        
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">Life of Pi <span class="year">(2012)</span> </div>
+                <p><span class="bold">Starring:</span>Suraj Sharma, Irrfan Khan</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span>
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>Life of Pi is a Canadian fantasy adventure novel by Yann Martel published in 2001. 
+                            The protagonist, Piscine Molitor \"Pi\" Patel, an Indian boy from Pondicherry, explores issues 
+                            of spirituality and practicality from an early age. He survives 227 days after a shipwreck while 
+                            stranded on a lifeboat in the Pacific Ocean with a Bengal tiger named Richard Parker.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/life_of_pi.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">The Pacific <span class="year">(2010)</span></div>
+                <p><span class="bold">Starring:</span> James Badge Dale, Joseph Mazzello</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span> 
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>The Pacific is a 2010 television series produced by HBO, Seven Network Australia, 
+                            Sky Movies, Playtone and DreamWorks that premiered in the United States on 14 March 2010.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/pacific.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">Rio <span class="year">(2011)</span></div>
+                <p><span class="bold">Starring:</span> Jesse Eisenberg, Leslie Mann</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span> 
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>Rio is a 2011 American 3D computer-animated musical adventure-comedy film produced by Blue Sky Studios and directed by 
+                            Carlos Saldanha. The title refers to the Brazilian city of Rio de Janeiro, where the film is set.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/rio.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">An Unfinished Life <span class="year">(2005)</span></div>
+                <p><span class="bold">Starring:</span> Robert Redford, Jennifer Lopez</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span> 
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>An Unfinished Life is a 2005 drama film directed by Swedish director 
+                            Lasse Hallström, and based on the Mark Spragg novel of the same name. 
+                            The film stars Robert Redford, Jennifer Lopez, and Morgan Freeman.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/unfinished_life.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">The Woman in Black <span class="year">(2012)</span></div>
+                <p><span class="bold">Starring:</span> Lu Corfield, Daniel Radcliffe</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span>
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>A young lawyer travels to a remote village where he discovers the vengeful ghost of a 
+                            scorned woman is terrorizing the locals.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/woman_in_black.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">The Mechanical Man <span class="year">(2012)</span></div>
+                <p><span class="bold">Starring:</span> Jenna Fischer, Chris Messina</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span>
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>The Giant Mechanical Man is an American dramedy film written and directed by Lee Kirk. It debuted at the 2012 Tribeca Film 
+                            Festival and was distributed by Tribeca Films.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/giant_mechanical_man.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">Hugo <span class="year">(2011)</span></div>
+                <p><span class="bold">Starring:</span> Asa Butterfield, Ben Kingsley</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span>
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>"Hugo is a 2011 American 3D historical adventure drama film directed and co-produced by Martin Scorsese and adapted for 
+                            the screen by John Logan. Based on Brian Selznick's novel The Invention of Hugo Cabret, it is about a boy 
+                            who lives alone in the Gare Montparnasse railway station in Paris in the 1930s.</p>
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/hugo.jpg">
+            </div>
+            
+        </div><!-- container-->
+        
+        <div class="container">
+            
+            <div class="info">
+                <div class="title">Shrek 3 <span class="year">(2007)</span></div>
+                <p><span class="bold">Starring:</span> Mike Myers, Cameron Diaz</p>
+                
+                    <div class="rating">
+                        <span class="bold">Rating:</span>
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/gold_star.png" height="20" width="20">
+                        <img src="images/regular_star.png" height="20" width="20">
+                    </div><!-- star-->
+                    
+                    <div class ="description">
+                        <p>When his new father-in-law, King Harold falls ill, Shrek is looked at as the heir to the land of Far, Far Away. 
+                            Not one to give up his beloved swamp, Shrek recruits his friends Donkey and Puss in Boots to install the rebellious 
+                            Artie as the new king. Princess Fiona, however, rallies a band of royal girlfriends to fend off a coup d'etat by the 
+                            jilted Prince Charming.</p>
+
+                    </div>
+                
+                
+            </div><!-- info-->
+            
+            <div class="cover">
+                <img class="screenshot" src="data/shrek3.gif">
+            </div>
+            
+        </div><!-- container-->
+    </body>
+</html>
