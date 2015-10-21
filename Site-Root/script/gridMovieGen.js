@@ -1,6 +1,40 @@
 $(document).ready(function () { 
     var gallery = new Gallery(movies["movies"]);
+    $('#search_button').on('click', search);
+    $('#search_bar').on("keypress", function (e) {            
+
+    if (e.keyCode === 13) {
+        // Cancel the default action on keypress event
+        e.preventDefault(); 
+
+        search();
+    }
 });
+});
+
+function search(){
+    var value = $("#search_bar").val();
+    var datacopy = [];
+    
+    var starring = false;
+    
+    for (var i = 0; i<(movies["movies"].length); i++){
+        if (movies["movies"][i].starring.search(value) !== -1){
+            starring = true;
+        }
+        else{
+            starring = false;
+        }
+        if (value === movies["movies"][i].title || parseInt(value) === movies["movies"][i].year || starring ){
+            datacopy.push(movies["movies"][i]);
+        }
+    }
+
+    if (value === ""){datacopy = movies["movies"];}
+    
+    $("#movies").empty();
+    var gallery = new Gallery(datacopy);
+}
 
 function Gallery(data){
     this.movies = data;
@@ -19,18 +53,13 @@ function Gallery(data){
         self.make_list.call(self);
     };
     
-    var sort_gallery =function()
-    {
+    var sort_gallery = function(){
         self.sort_gallery.call(self);
     };
-    
-    
-    
     
     $(this.grid_icon).on("click", make_grid_function);
     $(this.list_icon).on("click", make_list_function);
     $(this.sort_list).on('change', sort_gallery);
-    
     
     this.load_grid_movies(this);
 }
@@ -42,7 +71,6 @@ Gallery.prototype.load_grid_movies = function(self){
         $(self.movies_div).html(html);
     });
 };
-
 
 Gallery.prototype.make_grid = function () {
     $(this.movies_div).attr("class", "grid");
@@ -62,7 +90,7 @@ Gallery.prototype.sort_gallery= function (){
             function(first,second){
                 if (first[element]<second[element])
                     return -1;
-                if (first[element]==second[element])
+                if (first[element]===second[element])
                     return 0;
                 if (first[element]>second[element])
                     return 1;
