@@ -1,45 +1,3 @@
-//OLD METHOD OF ITERATIVE GENERATING, PRESERVED FOR POSTERITY
-//
-//
-//$(document).ready(function () { 
-//    load_images();
-//});
-//
-//
-//function load_images(){
-//    var data = movies["movies"];
-//    var html = "";
-//    
-//    for (var i =0; i<data.length; i++){
-//        html += make_image(data[i]);
-//    }
-//    
-//    $("#gridWrapper").html(html);
-//}
-//
-//function make_image(data){
-//    var html = "";
-//    html += "<div class='gridMovieBorder'>";
-//    html += "<div class='gridMoviePhoto'>";
-//    html += "<img class='movie' src='"+data["photo"]+"'>";
-//    
-//    if (data["HD"] === true){
-//        html += "<img class='HD' src='data/icons/HD.png'>";
-//    }
-//            
-//    html += "<div class='description'>";
-//    html += "<span>"+data["title"]+"<br>"+data["year"]+"</span>";
-//    html += "</div>";
-//            
-//    html += "<div class='starring'>";
-//    html += "<b>&nbsp;Starring:</b><br>&nbsp;"+data["starring"];
-//    html += "</div>";
-//    html += "</div>";
-//    html += "</div>";
-//    return html;
-//}
-
-
 //On page load
 $(document).ready(function () { 
     
@@ -107,7 +65,8 @@ function suggest() {
         var match = movies["movies"][i].title.toLowerCase().search(value.toLowerCase().trim());
         if (match !== -1) { //if there is a search match
             html += "<div class='sub_suggestions' data-item='" + movies["movies"][i].title + "' >";
-            html += movies["movies"][i].title.substring(0,match)+"<b>"+movies["movies"][i].title.substring(match,match+value.length)+"</b>"+movies["movies"][i].title.substring(match+value.length,movies["movies"][i].title.length);
+            html += "<b>" + movies["movies"][i].title + "</b>";
+            html += " (" + movies["movies"][i].year + ")" + " - Starring: " + movies["movies"][i].starring;
             html += "</div>";
             show=true; //show suggestions
         }
