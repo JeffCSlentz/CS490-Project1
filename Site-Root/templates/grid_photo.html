@@ -1,7 +1,9 @@
 <div class="movieContainer">
+    
+    <!--Contains all html for Grid based movies-->
     <div class="gridMoviePhoto">
         <img class="movie" src='{{photo}}'>
-        <img class="HD" src='data/icons/HD.png'>
+        <img class="{{HD}}" src='Data/Icons/HD.png'>
         <div class="descriptionGrid">
             <span>{{title}}<br>({{year}})</span>
 
@@ -10,6 +12,12 @@
                 <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
         </div>
     </div>
+    
+    
+    <!--Contains html for list based movies-->
+    <div class="cover">
+        <img class="screenshot" src='{{photo}}'>
+    </div>
     <div class="info">
         <div class="title">
             {{title}}
@@ -17,13 +25,49 @@
         </div>
         <p><span class="bold">Starring:</span>&nbsp{{starring}}</p>
 
-            <div class="rating">
+            
+            <div class="_{{rating}}">
                 <span class="bold">Rating:</span>
-                <img src="Data/Icons/gold_star.png" height="20" width="20">
-                <img src="Data/Icons/gold_star.png" height="20" width="20">
-                <img src="Data/Icons/gold_star.png" height="20" width="20">
-                <img src="Data/Icons/gold_star.png" height="20" width="20">
-                <img src="Data/Icons/gold_star.png" height="20" width="20">
+                
+                <!-- Only show class "one" if parent class is "_1"-->
+                <!-- This is defined in the css-->
+                <div class="one">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                </div>
+                
+                <!-- Do a similar thing as above-->
+                <div class="two">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                </div>
+                <div class="three">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                </div>
+                <div class="four">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/regular_star.png" height="20" width="20">
+                </div>
+                <div class="five">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                    <img src="Data/Icons/gold_star.png" height="20" width="20">
+                </div>
             </div><!-- star-->
 
             <div class ="descriptionList">
@@ -33,7 +77,5 @@
 
     </div><!-- info-->
 
-    <div class="cover">
-        <img class="screenshot" src='{{photo}}'>
-    </div>
+
 </div>
