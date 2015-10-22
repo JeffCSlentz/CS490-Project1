@@ -8,7 +8,7 @@
             /*page div options*/
             div.site_container{
                 width:100%;
-                min-width:545px;
+                min-width:150px;
                 /*background-color:lightcyan;*/
             }
             /*end of page div*/
@@ -43,25 +43,29 @@
                 width:60%;
                 background-color:white;
                 position:relative;
-                min-width:200px;
+                min-width:180px;
                 float:left;
                 height:30px;
                 line-height:30px;
                 margin-top:10px;
                 border: 1px grey solid;
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
             }
             
-            input.search_bar:focus{
+            #search_element{
+                float:left;
+                position:relative;
+                width:80%;
+            }
+            
+            #search_element:focus{
                 border:1px lightslategrey solid;
             }
             
-            .search_button{
+            #search_button{
                 line-height:25px;
                 margin-top:10px;
-                position:relative;
-                float:left;
+                position:absolute;
+                float:right;
                 height:28px;
                 width:55px;
                 text-align: center;
@@ -71,15 +75,18 @@
                 border-radius: 0px 4px 4px 0px;
             }
             
-            .search_button:hover{
+            #search_button:hover{
                 cursor: pointer;
                 
             }
             .sort_option{
                 height:35px;
+                float:left;
                 /*background-color:lightcyan;*/
                 line-height: 35px;
                 border-bottom: 1px solid gray;
+                width:100%;
+                min-width:100%;
             }
             .sort_option.label{
                 position:relative;
@@ -97,6 +104,7 @@
                 height:33px;
                 line-height: 0;
                 border-bottom: 0;
+                margin-right:2%;
             }
             .pageview_toggle img{
                 margin:0px;
@@ -211,12 +219,10 @@
                 border-bottom: solid; 
                 border-width:1.5px;
                 margin-top: 15px;
-                //margin-left: 10px;
                 border-color: rgb(245,245,245);
                  
             }
             div.list img.screenshot{
-                //padding:10px;
                 height:220px;
                 width:220px;
                
@@ -227,9 +233,7 @@
                 padding:5px;
                 border-color: rgb(245,245,245);
                 border-width:1.5px;
-                position: relative;               
-                //margin-left: 10px;
-               // margin-right: 10px;
+                position: relative;
                
             }
             div.list .descriptionList p{
