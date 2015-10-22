@@ -11,9 +11,9 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Style/gridMovie.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="script/movies.js"></script>
-        <script src="script/htmlMaker.js"></script>
-        <script src="script/pageLoad.js"></script>
+        <script src="Script/movies.js"></script>
+        <script src="Script/htmlMaker.js"></script>
+        <script src="Script/pageLoad.js"></script>
         
     </head>
     <body>
@@ -26,12 +26,14 @@ and open the template in the editor.
                         Rent A Movie
                     </p>
                 </div>
+                <div id="search_element">
                 <div class="search_bar">
                     <input type="search" class="search_bar"  id="search_bar" placeholder = "search" size = "15" maxlength="25">
                 </div>
                 <button class = "search_button" id="search_button">
                     Search
                 </button>
+                    </div>
             </div>
 
             <div class = "sort_option">
