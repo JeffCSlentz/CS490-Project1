@@ -79,13 +79,13 @@
         background-color:white;
         border-style:solid;
         border-width: 1px;
-        width:200px;
+        width: 500px;
         overflow:auto;
         display:none;
     }
 
     div.sub_suggestions{
-        width:200px;
+        
     }
 
     div.sub_suggestions:hover{
