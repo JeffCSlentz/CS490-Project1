@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+<!--Project 1 for CS490
+
+Group Members
+~~~~~~~~~~~~~~
+Jeffrey Slentz
+Carlo Santos
+Josh Daniels
 -->
 <html>
     <head>
-        <title>Best Movie Site Ever</title>
+        <title>Project 1 - Movie Database</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Style/gridMovie.css">
@@ -18,20 +21,19 @@ and open the template in the editor.
     </head>
     <body>
         <div class = "site_container">
+            
             <div class = "header_bar">
-
                 <img class = "site_logo" src="data/icons/movie.png" alt ="movie reel">
                 <div class = title>
                     <p class="site_title">
                         Rent A Movie
                     </p>
                 </div>
-                <div class="search_bar">
-                    <input type="search" class="search_bar"  id="search_bar" placeholder = "search" size = "15" maxlength="25">
+                <div class="search_container">
+                    <input type="search" class="search_bar"  id="search_bar" placeholder = "Search for Movies" size = "15" maxlength="25">
+                    <button class = "search_button" id="search_button">Search</button>
                 </div>
-                <button class = "search_button" id="search_button">
-                    Search
-                </button>
+                <div id="suggestions_box" class="suggestions"></div>
             </div>
 
             <div class = "sort_option">
@@ -46,45 +48,14 @@ and open the template in the editor.
                 </select>
                 <div class = "pageview_toggle">
 
-                    <img src='data/icons/list.jpg' alt = 'grid.jpg' id='list_icon' class='listview_button'>
-                    <img src='data/icons/grid.jpg' alt = 'grid.jpg' id='grid_icon' class='gridview_button'>
+                    <img src='data/icons/list.jpg' alt = 'grid_pressed.jpg' id='list_icon' class='listview_button'>
+                    <img src='data/icons/grid_pressed.jpg' alt = 'grid.jpg' id='grid_icon' class='gridview_button'>
                 </div>
             </div>
+            
             <div id="movies" class="grid">
-
-
-                <!-- This gets written over, it's here for posterity -->
-                <div class="gridMovieBorder">
-                    <div class="gridMoviePhoto">
-                        <img class="movie" src="data/life_of_pi.jpg">
-                        <img class="HD" src="data/icons/HD.png">
-                        <div class="description">
-                            <span>{{title}}<br>({{year}})</span>
-
-                        </div>
-                        <div class="starring">
-                                <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gridMovieBorder">
-                    <div class="gridMoviePhoto">
-                        <img class="movie" src="data/life_of_pi.jpg">
-                        <img class="HD" src="data/icons/HD.png">
-                        <div class="description">
-                            <span>{{title}}<br>({{year}})</span>
-
-                        </div>
-                        <div class="starring">
-                                <b>&nbsp;Starring:</b><br>&nbsp;{{starring}}
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div id="tempthing">
-                
-            </div>
+            
         </div>
     </body>
 </html>
